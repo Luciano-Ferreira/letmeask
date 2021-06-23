@@ -24,3 +24,5 @@
   }
 }
 ```
+
+[child added](https://firebase.google.com/docs/database/admin/retrieve-data#node.js)
