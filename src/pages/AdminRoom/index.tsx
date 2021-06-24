@@ -79,7 +79,9 @@ export function AdminRoom() {
 								key={question.id}
 								content={question.content}
 								author={question.author}
-							/>
+							>
+								
+							</Question>
 						)
 					})}
 				</div>
