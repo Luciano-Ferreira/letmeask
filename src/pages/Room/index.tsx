@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { FormEvent } from 'react';
 
 import { Button } from '../../components/Button';
 import { RoomCode } from '../../components/RoomCode';
@@ -9,7 +10,7 @@ import logoImg from '../../assets/images/logo.svg';
 
 import './styles.scss';
 import { database } from '../../services/firebase';
-import { FormEvent } from 'react';
+import { Question } from '../../components/Question';
 
 type FirebaseQuestions = Record<string, {
 	author: {
@@ -129,7 +130,17 @@ export function Room() {
 						</Button>
 					</div>
 				</form>
-				{JSON.stringify(questions)}
+				<div className="question-list">
+					{questions.map(question => {
+						return (
+							<Question
+								key={question.id}
+								content={question.content}
+								author={question.author}
+							/>
+						)
+					})}
+				</div>
 			</main>
 		</div>
 	);
