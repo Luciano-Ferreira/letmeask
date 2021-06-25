@@ -26,3 +26,17 @@
 ```
 
 [child added](https://firebase.google.com/docs/database/admin/retrieve-data#node.js)
+
+## development tips
+
+- dark theme
+
+- PWA
+
+- responsiveness
+
+- other databases (supabase, faunadb, firestore)
+
+- styled components
+
+- ESLint, prettier <!--https://www.youtube.com/watch?v=1nVUfZg2dSA-->
