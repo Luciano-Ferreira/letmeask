@@ -1,3 +1,5 @@
+# 🚧 read me under construction 🚧
+
 [Layout of application](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate)
 
 [![Deploy to Firebase Hosting on merge](https://github.com/Luciano-Ferreira/letmeask/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/Luciano-Ferreira/letmeask/actions/workflows/firebase-hosting-merge.yml)
