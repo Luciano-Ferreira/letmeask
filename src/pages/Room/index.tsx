@@ -8,7 +8,7 @@ import { useAuth } from '../../hooks/useAuth';
 import { Question } from '../../components/Question';
 import { database } from '../../services/firebase';
 import { useRoom } from '../../hooks/useRoom';
-
+import { FiLogOut } from 'react-icons/fi'
 
 
 import logoImg from '../../assets/images/logo.svg';
@@ -20,7 +20,7 @@ type RoomParams = {
 }
 
 export function Room() {
-	const { user } = useAuth();
+	const { user, signOut } = useAuth();
 	const [newQuestion, setNewQuestion] = useState('');
 
 	
@@ -73,6 +73,9 @@ export function Room() {
 				<div className="content">
 					<img src={logoImg} alt="Let me ask" />
 					<RoomCode code={roomId}/>
+					<Button onClick={signOut}>
+						<FiLogOut /> Sair
+					</Button>
 				</div>
 			</header>
 
