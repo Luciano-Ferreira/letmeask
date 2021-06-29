@@ -1,5 +1,3 @@
-# 🚧 read me under construction 🚧
-
 <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="./src/assets/images/logo.svg" alt="letmeask"></a>
@@ -25,14 +23,11 @@
 
 ## 📝 Table of Contents
 
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
+- [Getting Started](#getting_started)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [LICENSE](#license)
 
 
 ## 🎈 Usage <a name="usage"></a>
@@ -41,90 +36,20 @@
   <img src="./.github/letmeask.gif" alt="demo-web" height="460" width="100%">
 </div>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+---
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+To run the project on your machine you will need to create a project in firebase with your google account.
 
-### Prerequisites
+The features you will configure are real time:
+- Real time database.
 
-What things you need to install the software and how to install them.
+And if you want to deploy the application:
+- Hosting
 
-```
-Give examples
-```
+After configuring the real time database it is necessary to apply these rules:
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@Luciano](https://github.com/luciano-ferreira)
-
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
-
-
-
-[Layout of application](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate)
-
-
-
-
-## Rules of Real Time Database
 ```json
 {
   "rules": {
@@ -148,9 +73,47 @@ Add additional notes about how to deploy this on a live system.
 }
 ```
 
-[child added](https://firebase.google.com/docs/database/admin/retrieve-data#node.js)
+[Learn more](https://firebase.google.com/docs/projects/learn-more)
 
-## development tips
+### Prerequisites
+
+
+Before you begin, you will need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) and a package manager [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/). 
+
+
+### Installing
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Luciano-Ferreira/letmeask.git
+
+# Access the directory
+$ cd letmeask
+
+# Install all dependencies
+$ yarn 
+# or
+$ npm install
+```
+configure the local environments .env.local.
+The variables will be shown right after the configuration in firebase
+```bash
+# Run the application in dev mode
+$ yarn start
+# or
+$ npm run start
+
+# The application start in http://localhost:3000
+```
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [FireBase](https://firebase.google.com/)
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+## 🤔 Development tips
+
+- [child added](https://firebase.google.com/docs/database/admin/retrieve-data#node.js)
 
 - dark theme
 
@@ -163,3 +126,10 @@ Add additional notes about how to deploy this on a live system.
 - styled components
 
 - ESLint, prettier <!--https://www.youtube.com/watch?v=1nVUfZg2dSA-->
+
+## :memo: License <a name = "license"></a>
+This project is under the MIT license. See the [LICENSE](https://github.com/Luciano-Ferreira/letmeask/blob/main/LICENSE) for more information.
+
+---
+
+Made with ♥ by [@Luciano Silva](https://github.com/luciano-ferreira) :wave: [Get in touch!](https://www.linkedin.com/in/lucianof-silva/)
