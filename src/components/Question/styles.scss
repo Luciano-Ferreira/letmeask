@@ -1,11 +1,11 @@
 .question {
   background: #fefefe;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-  padding: 24px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
 
   & + .question {
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 
   &.highlighted {
@@ -29,20 +29,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 
     .user-info {
       display: flex;
       align-items: center;
 
       img {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
       }
 
       span {
-        margin-left: 8px;
+        margin-left: 0.5rem;
         color: #737380;
         font-size: 14px;
       }
@@ -50,7 +50,7 @@
 
     > div {
       display: flex;
-      gap: 16px;
+      gap: 1rem;
     }
 
     button {
