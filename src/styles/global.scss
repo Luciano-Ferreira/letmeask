@@ -4,9 +4,43 @@
     box-sizing: border-box;
 }
 
+:root {
+    --white-40: #fefefe;
+    --white-50: #f8f8f8;
+    --white-60: #f4f0ff;
+    --white-100: #ffffff;
+    
+    --black: #29292e;
+
+    --pink-50: #e559f9;
+
+    --purple-50: #835afd;
+
+    --gray-10: #e2e2e2;
+    --gray-50: #dbdcdd;
+    --gray-80: #a8a8b3;
+    --gray-100: #737380;
+
+    --orange: #ea4335;
+    
+
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
 body {
-    background: #f8f8f8;
-    color: #29292e;
+    background: var(--white-50);
+    color: var(--black);
 }
 
 body, input, button, textarea {
