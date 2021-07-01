@@ -81,11 +81,14 @@ After configuring the real time database it is necessary to apply these rules:
 Before you begin, you will need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) and a package manager [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/). 
 
 
-### [Installing](https://www.youtube.com/watch?v=guS7UnxNV1E)
+### Installing
+
 
 <a href="https://www.youtube.com/watch?v=guS7UnxNV1E" target="_blank" align="center">
-  <img src="./.github/thumb.jpeg">
+  <img src="./.github/thumb.jpeg" width="100%">
 </a>
+
+---
 
 ```bash
 # Clone this repository
