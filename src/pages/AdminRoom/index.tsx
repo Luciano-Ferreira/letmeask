@@ -61,20 +61,18 @@ export function AdminRoom() {
 	return (
 		<div id="page-room">
 			<Header>
-				<div className="content">
-					<img src={logoImg} alt="Let me ask" />
-					<div>
-            <RoomCode code={roomId}/>
-            <Button 
-							isOutlined
-							onClick={handleEndRoom}
-						>
-							Encerrar sala
-						</Button>
-						<Button onClick={signOut}>
-							<FiLogOut /> Sair
-						</Button>
-          </div>
+				<img src={logoImg} alt="Let me ask" />
+				<div>
+					<RoomCode code={roomId}/>
+					<Button 
+						isOutlined
+						onClick={handleEndRoom}
+					>
+						Encerrar sala
+					</Button>
+					<Button onClick={signOut}>
+						<FiLogOut /> Sair
+					</Button>
 				</div>
 			</Header>
 
