@@ -1,5 +1,6 @@
 import { useHistory, useParams } from 'react-router-dom';
 
+import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
 import { RoomCode } from '../../components/RoomCode';
 import { Question } from '../../components/Question';
@@ -12,6 +13,8 @@ import checkImg from '../../assets/images/check.svg';
 import answerImg from '../../assets/images/answer.svg';
 
 import './styles.scss';
+import { FiLogOut } from 'react-icons/fi';
+import { useAuth } from '../../hooks/useAuth';
 
 
 type RoomParams = {
@@ -25,6 +28,7 @@ export function AdminRoom() {
 	const roomId = params.id;
 	const { title, questions } = useRoom(roomId);
 
+	const { signOut } = useAuth();
 	async function handleEndRoom() {
 		database.ref(`rooms/${roomId}`).update({
 			endedAt: new Date(),
@@ -56,7 +60,7 @@ export function AdminRoom() {
 
 	return (
 		<div id="page-room">
-			<header>
+			<Header>
 				<div className="content">
 					<img src={logoImg} alt="Let me ask" />
 					<div>
@@ -67,9 +71,12 @@ export function AdminRoom() {
 						>
 							Encerrar sala
 						</Button>
+						<Button onClick={signOut}>
+							<FiLogOut /> Sair
+						</Button>
           </div>
 				</div>
-			</header>
+			</Header>
 
 			<main>
 				<div className="room-title">

@@ -8,10 +8,12 @@ import { useAuth } from '../../hooks/useAuth';
 import { Question } from '../../components/Question';
 import { database } from '../../services/firebase';
 import { useRoom } from '../../hooks/useRoom';
-import { FiLogOut } from 'react-icons/fi'
+import { Header } from '../../components/Header';
 
 
 import logoImg from '../../assets/images/logo.svg';
+
+import { FiLogOut } from 'react-icons/fi'
 import './styles.scss';
 
 
@@ -69,15 +71,13 @@ export function Room() {
 
 	return (
 		<div id="page-room">
-			<header>
-				<div className="content">
+			<Header>
 					<img src={logoImg} alt="Let me ask" />
 					<RoomCode code={roomId}/>
 					<Button onClick={signOut}>
 						<FiLogOut /> Sair
 					</Button>
-				</div>
-			</header>
+			</Header>
 
 			<main>
 				<div className="room-title">
